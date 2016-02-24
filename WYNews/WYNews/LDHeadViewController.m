@@ -1,0 +1,139 @@
+//
+//  LDHeadViewController.m
+//  WYNews
+//
+//  Created by pro on 16/2/24.
+//  Copyright © 2016年 LeeDan. All rights reserved.
+//
+
+#import "LDHeadViewController.h"
+#import "LDHeadCell.h"
+#import "LDHeadViewModel.h"
+#import "LDHeadModel.h"
+
+@interface LDHeadViewController ()
+@property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *headLayout;
+
+//head数据数组
+@property (strong, nonatomic) NSArray *headModels;
+
+@end
+
+@implementation LDHeadViewController
+
+static NSString * const reuseIdentifier = @"HeadCell";
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    
+    // Uncomment the following line to preserve selection between presentations
+    // self.clearsSelectionOnViewWillAppear = NO;
+    
+    // Do any additional setup after loading the view.
+    [self setupLayout];
+    
+    //发送请求
+    [self loadHeadData];
+}
+
+- (void)setupLayout {
+    self.headLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
+    self.headLayout.itemSize = self.view.bounds.size;
+    self.headLayout.minimumLineSpacing = 0;
+    
+    
+    self.collectionView.pagingEnabled = YES;
+}
+
+- (void)loadHeadData {
+    [LDHeadViewModel headViewModelWithFinished:^(NSArray *headModels, NSError *error) {
+        if (error != nil || headModels.count == 0) {
+            return ;
+        }
+      
+        self.headModels = headModels;
+        [self.collectionView reloadData];
+        
+    }];
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
+
+#pragma mark <UICollectionViewDataSource>
+
+- (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+
+    return 1;
+}
+
+
+- (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+
+    return self.headModels.count;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    LDHeadCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    
+    //获取模型
+    LDHeadModel *headModel = self.headModels[indexPath.row];
+    // Configure the cell
+    cell.headModel = headModel;
+    
+    return cell;
+}
+
+#pragma mark --懒加载
+- (NSArray *)headModels {
+    if (!_headModels) {
+        _headModels = [NSArray array];
+       
+    }
+    return _headModels;
+}
+
+#pragma mark <UICollectionViewDelegate>
+
+/*
+// Uncomment this method to specify if the specified item should be highlighted during tracking
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldHighlightItemAtIndexPath:(NSIndexPath *)indexPath {
+	return YES;
+}
+*/
+
+/*
+// Uncomment this method to specify if the specified item should be selected
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    return YES;
+}
+*/
+
+/*
+// Uncomment these methods to specify if an action menu should be displayed for the specified item, and react to actions performed on the item
+- (BOOL)collectionView:(UICollectionView *)collectionView shouldShowMenuForItemAtIndexPath:(NSIndexPath *)indexPath {
+	return NO;
+}
+
+- (BOOL)collectionView:(UICollectionView *)collectionView canPerformAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+	return NO;
+}
+
+- (void)collectionView:(UICollectionView *)collectionView performAction:(SEL)action forItemAtIndexPath:(NSIndexPath *)indexPath withSender:(id)sender {
+	
+}
+*/
+
+@end

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  LDHeadViewController.h
 //  WYNews
 //
 //  Created by pro on 16/2/24.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface LDHeadViewController : UICollectionViewController
 
 @end
-

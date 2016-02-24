@@ -10,10 +10,16 @@
 		06AAF89620D19E010A0F69C8 /* libPods-WYNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19DFA10921D2AFDEB3CDA1D2 /* libPods-WYNews.a */; };
 		150FBF371C7D5A510068BC2B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF361C7D5A510068BC2B /* main.m */; };
 		150FBF3A1C7D5A510068BC2B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF391C7D5A510068BC2B /* AppDelegate.m */; };
-		150FBF3D1C7D5A510068BC2B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF3C1C7D5A510068BC2B /* ViewController.m */; };
 		150FBF401C7D5A510068BC2B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150FBF3E1C7D5A510068BC2B /* Main.storyboard */; };
 		150FBF421C7D5A510068BC2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 150FBF411C7D5A510068BC2B /* Assets.xcassets */; };
 		150FBF451C7D5A510068BC2B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150FBF431C7D5A510068BC2B /* LaunchScreen.storyboard */; };
+		150FBF4E1C7D63430068BC2B /* LDHeadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF4D1C7D63430068BC2B /* LDHeadViewController.m */; };
+		150FBF551C7D64460068BC2B /* LDHeadCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF541C7D64460068BC2B /* LDHeadCell.m */; };
+		150FBF581C7D67EF0068BC2B /* UIColor+Random.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF571C7D67EF0068BC2B /* UIColor+Random.m */; };
+		150FBF5C1C7D6BA90068BC2B /* LDNetworkTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF5B1C7D6BA90068BC2B /* LDNetworkTool.m */; };
+		150FBF5F1C7D70650068BC2B /* LDHeadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF5E1C7D70650068BC2B /* LDHeadModel.m */; };
+		150FBF631C7D715A0068BC2B /* LDHeadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF621C7D715A0068BC2B /* LDHeadViewModel.m */; };
+		150FBF661C7D770E0068BC2B /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF651C7D770E0068BC2B /* NSObject+Log.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,12 +27,25 @@
 		150FBF361C7D5A510068BC2B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		150FBF381C7D5A510068BC2B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		150FBF391C7D5A510068BC2B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		150FBF3B1C7D5A510068BC2B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		150FBF3C1C7D5A510068BC2B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		150FBF3F1C7D5A510068BC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		150FBF411C7D5A510068BC2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		150FBF441C7D5A510068BC2B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		150FBF461C7D5A510068BC2B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150FBF4C1C7D63430068BC2B /* LDHeadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHeadViewController.h; sourceTree = "<group>"; };
+		150FBF4D1C7D63430068BC2B /* LDHeadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHeadViewController.m; sourceTree = "<group>"; };
+		150FBF531C7D64460068BC2B /* LDHeadCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHeadCell.h; sourceTree = "<group>"; };
+		150FBF541C7D64460068BC2B /* LDHeadCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHeadCell.m; sourceTree = "<group>"; };
+		150FBF561C7D67EF0068BC2B /* UIColor+Random.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Random.h"; sourceTree = "<group>"; };
+		150FBF571C7D67EF0068BC2B /* UIColor+Random.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Random.m"; sourceTree = "<group>"; };
+		150FBF591C7D68010068BC2B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		150FBF5A1C7D6BA90068BC2B /* LDNetworkTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNetworkTool.h; sourceTree = "<group>"; };
+		150FBF5B1C7D6BA90068BC2B /* LDNetworkTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNetworkTool.m; sourceTree = "<group>"; };
+		150FBF5D1C7D70650068BC2B /* LDHeadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHeadModel.h; sourceTree = "<group>"; };
+		150FBF5E1C7D70650068BC2B /* LDHeadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHeadModel.m; sourceTree = "<group>"; };
+		150FBF611C7D715A0068BC2B /* LDHeadViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHeadViewModel.h; sourceTree = "<group>"; };
+		150FBF621C7D715A0068BC2B /* LDHeadViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHeadViewModel.m; sourceTree = "<group>"; };
+		150FBF641C7D770E0068BC2B /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
+		150FBF651C7D770E0068BC2B /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
 		19DFA10921D2AFDEB3CDA1D2 /* libPods-WYNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4380F9DE59727F4B35FE6F /* Pods-WYNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews/Pods-WYNews.release.xcconfig"; sourceTree = "<group>"; };
 		DC8FD4E83E9A34909FA7866D /* Pods-WYNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews/Pods-WYNews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -65,10 +84,13 @@
 		150FBF341C7D5A510068BC2B /* WYNews */ = {
 			isa = PBXGroup;
 			children = (
+				150FBF521C7D642D0068BC2B /* Views */,
+				150FBF511C7D63630068BC2B /* Controllers */,
+				150FBF601C7D71380068BC2B /* ViewModels */,
+				150FBF501C7D63570068BC2B /* Models */,
+				150FBF4F1C7D634F0068BC2B /* Tools */,
 				150FBF381C7D5A510068BC2B /* AppDelegate.h */,
 				150FBF391C7D5A510068BC2B /* AppDelegate.m */,
-				150FBF3B1C7D5A510068BC2B /* ViewController.h */,
-				150FBF3C1C7D5A510068BC2B /* ViewController.m */,
 				150FBF3E1C7D5A510068BC2B /* Main.storyboard */,
 				150FBF411C7D5A510068BC2B /* Assets.xcassets */,
 				150FBF431C7D5A510068BC2B /* LaunchScreen.storyboard */,
@@ -82,8 +104,58 @@
 			isa = PBXGroup;
 			children = (
 				150FBF361C7D5A510068BC2B /* main.m */,
+				150FBF591C7D68010068BC2B /* PrefixHeader.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		150FBF4F1C7D634F0068BC2B /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+				150FBF641C7D770E0068BC2B /* NSObject+Log.h */,
+				150FBF651C7D770E0068BC2B /* NSObject+Log.m */,
+				150FBF561C7D67EF0068BC2B /* UIColor+Random.h */,
+				150FBF571C7D67EF0068BC2B /* UIColor+Random.m */,
+				150FBF5A1C7D6BA90068BC2B /* LDNetworkTool.h */,
+				150FBF5B1C7D6BA90068BC2B /* LDNetworkTool.m */,
+			);
+			name = Tools;
+			sourceTree = "<group>";
+		};
+		150FBF501C7D63570068BC2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				150FBF5D1C7D70650068BC2B /* LDHeadModel.h */,
+				150FBF5E1C7D70650068BC2B /* LDHeadModel.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		150FBF511C7D63630068BC2B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				150FBF4C1C7D63430068BC2B /* LDHeadViewController.h */,
+				150FBF4D1C7D63430068BC2B /* LDHeadViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		150FBF521C7D642D0068BC2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				150FBF531C7D64460068BC2B /* LDHeadCell.h */,
+				150FBF541C7D64460068BC2B /* LDHeadCell.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		150FBF601C7D71380068BC2B /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				150FBF611C7D715A0068BC2B /* LDHeadViewModel.h */,
+				150FBF621C7D715A0068BC2B /* LDHeadViewModel.m */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 		312BA508F797C4C859AACB39 /* Pods */ = {
@@ -224,8 +296,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				150FBF3D1C7D5A510068BC2B /* ViewController.m in Sources */,
+				150FBF5F1C7D70650068BC2B /* LDHeadModel.m in Sources */,
+				150FBF5C1C7D6BA90068BC2B /* LDNetworkTool.m in Sources */,
+				150FBF631C7D715A0068BC2B /* LDHeadViewModel.m in Sources */,
+				150FBF581C7D67EF0068BC2B /* UIColor+Random.m in Sources */,
 				150FBF3A1C7D5A510068BC2B /* AppDelegate.m in Sources */,
+				150FBF661C7D770E0068BC2B /* NSObject+Log.m in Sources */,
+				150FBF551C7D64460068BC2B /* LDHeadCell.m in Sources */,
+				150FBF4E1C7D63430068BC2B /* LDHeadViewController.m in Sources */,
 				150FBF371C7D5A510068BC2B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -339,6 +417,7 @@
 			baseConfigurationReference = DC8FD4E83E9A34909FA7866D /* Pods-WYNews.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WYNews/PrefixHeader.pch;
 				INFOPLIST_FILE = WYNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LD.working.WYNews;
@@ -351,6 +430,7 @@
 			baseConfigurationReference = 1F4380F9DE59727F4B35FE6F /* Pods-WYNews.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = WYNews/PrefixHeader.pch;
 				INFOPLIST_FILE = WYNews/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LD.working.WYNews;

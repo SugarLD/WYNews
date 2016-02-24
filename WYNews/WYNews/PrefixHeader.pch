@@ -1,0 +1,30 @@
+//
+//  PrefixHeader.pch
+//  WYNews
+//
+//  Created by pro on 16/2/24.
+//  Copyright © 2016年 LeeDan. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#ifdef __OBJC__
+
+#import "UIColor+Random.h"
+#import <AFNetworking/AFNetworking.h>
+#import <SDWebImage/UIImageView+WebCache.h>
+#import "LDNetworkTool.h"
+
+#endif
+
+//设置Log
+#ifdef DEBUG
+#define LDLog(...) NSLog(__VA_ARGS__)
+#else
+#define LDLog(...)
+#endif
+
+#endif /* PrefixHeader_pch */
