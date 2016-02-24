@@ -23,8 +23,11 @@
 - (void)setHeadModel:(LDHeadModel *)headModel {
     _headModel = headModel;
     
-    [self.imgView sd_setImageWithURL:[NSURL URLWithString:headModel.imgsrc] placeholderImage:nil options:SDWebImageLowPriority];
+    [self.imgView sd_setImageWithURL:[NSURL URLWithString:headModel.imgsrc] placeholderImage:nil options:SDWebImageRetryFailed|SDWebImageLowPriority];
     self.titleLabel.text = headModel.title;
+    
+    self.pageControl.currentPage = self.tag;
+    LDLog(@"tag: %zd, currentPage: %zd", self.tag, self.pageControl.currentPage);
 }
 
 @end

@@ -22,7 +22,7 @@
         for (NSDictionary *dict in results) {
             LDHeadModel *headModel = [LDHeadModel headModelWithDict:dict];
             [arrM addObject:headModel];
-            LDLog(@"%@", headModel);
+            //LDLog(@"%@", headModel);
         }
         
         finished(arrM, nil);

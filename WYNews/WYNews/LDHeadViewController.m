@@ -53,6 +53,8 @@ static NSString * const reuseIdentifier = @"HeadCell";
       
         self.headModels = headModels;
         [self.collectionView reloadData];
+        //显示最中间的那一组
+        [self.collectionView scrollToItemAtIndexPath:[NSIndexPath indexPathForItem:0 inSection:500] atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:NO];
         
     }];
 }
@@ -76,7 +78,7 @@ static NSString * const reuseIdentifier = @"HeadCell";
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
 
-    return 1;
+    return 1000;
 }
 
 
@@ -88,8 +90,12 @@ static NSString * const reuseIdentifier = @"HeadCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LDHeadCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
+    LDLog(@"%zd", indexPath.item);
+    //设置cell的tag
+    cell.tag = indexPath.item;
+    
     //获取模型
-    LDHeadModel *headModel = self.headModels[indexPath.row];
+    LDHeadModel *headModel = self.headModels[indexPath.item];
     // Configure the cell
     cell.headModel = headModel;
     
