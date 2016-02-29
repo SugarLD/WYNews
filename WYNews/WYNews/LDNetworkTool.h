@@ -15,4 +15,6 @@
 
 - (void)headViewWithSuccess:(void(^)(NSArray *results))success failure:(void(^)(NSError *error))failure;
 
+- (void)newsWithURLString:(NSString *)URLString Success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure;
+
 @end

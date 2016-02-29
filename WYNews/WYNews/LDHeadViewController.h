@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LDHeadViewController : UICollectionViewController
+@interface LDHeadViewController : UIViewController
 
 @end

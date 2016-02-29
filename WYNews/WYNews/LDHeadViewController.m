@@ -11,8 +11,13 @@
 #import "LDHeadViewModel.h"
 #import "LDHeadModel.h"
 
-@interface LDHeadViewController ()
+@interface LDHeadViewController ()<UICollectionViewDataSource,UICollectionViewDelegate>
 @property (weak, nonatomic) IBOutlet UICollectionViewFlowLayout *headLayout;
+@property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+
+@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 //head数据数组
 @property (strong, nonatomic) NSArray *headModels;
@@ -30,15 +35,27 @@ static NSString * const reuseIdentifier = @"HeadCell";
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Do any additional setup after loading the view.
-    [self setupLayout];
+    //[self setupLayout];
+    self.collectionView.delegate = self;
+    self.collectionView.dataSource = self;
     
     //发送请求
     [self loadHeadData];
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+}
+
+- (void)viewDidLayoutSubviews {
+    [super viewDidLayoutSubviews];
+    [self setupLayout];//布局
+}
+
 - (void)setupLayout {
     self.headLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
-    self.headLayout.itemSize = self.view.bounds.size;
+    self.headLayout.itemSize = self.collectionView.bounds.size;
     self.headLayout.minimumLineSpacing = 0;
     
     
@@ -90,7 +107,7 @@ static NSString * const reuseIdentifier = @"HeadCell";
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     LDHeadCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
     
-    LDLog(@"%zd", indexPath.item);
+    //LDLog(@"%zd", indexPath.item);
     //设置cell的tag
     cell.tag = indexPath.item;
     
@@ -99,7 +116,19 @@ static NSString * const reuseIdentifier = @"HeadCell";
     // Configure the cell
     cell.headModel = headModel;
     
+    
     return cell;
+}
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
+    NSInteger page = (scrollView.contentOffset.x + scrollView.bounds.size.width * 0.5) / scrollView.bounds.size.width;
+    //LDLog(@"%zd", page % self.headModels.count);
+    page %= self.headModels.count;
+    //获取模型
+    LDHeadModel *headModel = self.headModels[page];
+    self.titleLabel.text = headModel.title;
+    self.pageControl.currentPage = page;
+
 }
 
 #pragma mark --懒加载

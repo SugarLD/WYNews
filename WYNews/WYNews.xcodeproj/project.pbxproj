@@ -20,6 +20,17 @@
 		150FBF5F1C7D70650068BC2B /* LDHeadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF5E1C7D70650068BC2B /* LDHeadModel.m */; };
 		150FBF631C7D715A0068BC2B /* LDHeadViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF621C7D715A0068BC2B /* LDHeadViewModel.m */; };
 		150FBF661C7D770E0068BC2B /* NSObject+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF651C7D770E0068BC2B /* NSObject+Log.m */; };
+		150FBF691C7DAA7B0068BC2B /* LDNewsModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF681C7DAA7B0068BC2B /* LDNewsModel.m */; };
+		150FBF6C1C7DABF40068BC2B /* LDNewsViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF6B1C7DABF40068BC2B /* LDNewsViewModel.m */; };
+		150FBF6F1C7DAC1B0068BC2B /* LDNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF6E1C7DAC1B0068BC2B /* LDNewsViewController.m */; };
+		150FBF721C7DBF700068BC2B /* LDNewsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF711C7DBF700068BC2B /* LDNewsCell.m */; };
+		150FBF781C7F475B0068BC2B /* LDHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF771C7F475B0068BC2B /* LDHomeViewController.m */; };
+		150FBF7A1C7F47740068BC2B /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 150FBF791C7F47740068BC2B /* Home.storyboard */; };
+		150FBF7D1C7F497A0068BC2B /* LDHomeChannelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF7C1C7F497A0068BC2B /* LDHomeChannelModel.m */; };
+		150FBF7F1C7F498D0068BC2B /* topic_news.json in Resources */ = {isa = PBXBuildFile; fileRef = 150FBF7E1C7F498D0068BC2B /* topic_news.json */; };
+		150FBF821C7F4A630068BC2B /* LDHomeChannelViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF811C7F4A630068BC2B /* LDHomeChannelViewModel.m */; };
+		150FBF851C7F4DDC0068BC2B /* LDHomeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF841C7F4DDC0068BC2B /* LDHomeLabel.m */; };
+		15C228351C829DD300D63F89 /* LDChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C228341C829DD300D63F89 /* LDChannelCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +57,26 @@
 		150FBF621C7D715A0068BC2B /* LDHeadViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHeadViewModel.m; sourceTree = "<group>"; };
 		150FBF641C7D770E0068BC2B /* NSObject+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Log.h"; sourceTree = "<group>"; };
 		150FBF651C7D770E0068BC2B /* NSObject+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Log.m"; sourceTree = "<group>"; };
+		150FBF671C7DAA7B0068BC2B /* LDNewsModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNewsModel.h; sourceTree = "<group>"; };
+		150FBF681C7DAA7B0068BC2B /* LDNewsModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNewsModel.m; sourceTree = "<group>"; };
+		150FBF6A1C7DABF40068BC2B /* LDNewsViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNewsViewModel.h; sourceTree = "<group>"; };
+		150FBF6B1C7DABF40068BC2B /* LDNewsViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNewsViewModel.m; sourceTree = "<group>"; };
+		150FBF6D1C7DAC1B0068BC2B /* LDNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNewsViewController.h; sourceTree = "<group>"; };
+		150FBF6E1C7DAC1B0068BC2B /* LDNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNewsViewController.m; sourceTree = "<group>"; };
+		150FBF701C7DBF700068BC2B /* LDNewsCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDNewsCell.h; sourceTree = "<group>"; };
+		150FBF711C7DBF700068BC2B /* LDNewsCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDNewsCell.m; sourceTree = "<group>"; };
+		150FBF761C7F475B0068BC2B /* LDHomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHomeViewController.h; sourceTree = "<group>"; };
+		150FBF771C7F475B0068BC2B /* LDHomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHomeViewController.m; sourceTree = "<group>"; };
+		150FBF791C7F47740068BC2B /* Home.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		150FBF7B1C7F497A0068BC2B /* LDHomeChannelModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHomeChannelModel.h; sourceTree = "<group>"; };
+		150FBF7C1C7F497A0068BC2B /* LDHomeChannelModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHomeChannelModel.m; sourceTree = "<group>"; };
+		150FBF7E1C7F498D0068BC2B /* topic_news.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = topic_news.json; sourceTree = "<group>"; };
+		150FBF801C7F4A630068BC2B /* LDHomeChannelViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHomeChannelViewModel.h; sourceTree = "<group>"; };
+		150FBF811C7F4A630068BC2B /* LDHomeChannelViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHomeChannelViewModel.m; sourceTree = "<group>"; };
+		150FBF831C7F4DDC0068BC2B /* LDHomeLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDHomeLabel.h; sourceTree = "<group>"; };
+		150FBF841C7F4DDC0068BC2B /* LDHomeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHomeLabel.m; sourceTree = "<group>"; };
+		15C228331C829DD300D63F89 /* LDChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDChannelCell.h; sourceTree = "<group>"; };
+		15C228341C829DD300D63F89 /* LDChannelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDChannelCell.m; sourceTree = "<group>"; };
 		19DFA10921D2AFDEB3CDA1D2 /* libPods-WYNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4380F9DE59727F4B35FE6F /* Pods-WYNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews/Pods-WYNews.release.xcconfig"; sourceTree = "<group>"; };
 		DC8FD4E83E9A34909FA7866D /* Pods-WYNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews/Pods-WYNews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +134,7 @@
 		150FBF351C7D5A510068BC2B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				150FBF7E1C7F498D0068BC2B /* topic_news.json */,
 				150FBF361C7D5A510068BC2B /* main.m */,
 				150FBF591C7D68010068BC2B /* PrefixHeader.pch */,
 			);
@@ -127,6 +159,10 @@
 			children = (
 				150FBF5D1C7D70650068BC2B /* LDHeadModel.h */,
 				150FBF5E1C7D70650068BC2B /* LDHeadModel.m */,
+				150FBF671C7DAA7B0068BC2B /* LDNewsModel.h */,
+				150FBF681C7DAA7B0068BC2B /* LDNewsModel.m */,
+				150FBF7B1C7F497A0068BC2B /* LDHomeChannelModel.h */,
+				150FBF7C1C7F497A0068BC2B /* LDHomeChannelModel.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -136,6 +172,11 @@
 			children = (
 				150FBF4C1C7D63430068BC2B /* LDHeadViewController.h */,
 				150FBF4D1C7D63430068BC2B /* LDHeadViewController.m */,
+				150FBF6D1C7DAC1B0068BC2B /* LDNewsViewController.h */,
+				150FBF6E1C7DAC1B0068BC2B /* LDNewsViewController.m */,
+				150FBF761C7F475B0068BC2B /* LDHomeViewController.h */,
+				150FBF771C7F475B0068BC2B /* LDHomeViewController.m */,
+				150FBF791C7F47740068BC2B /* Home.storyboard */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -145,6 +186,12 @@
 			children = (
 				150FBF531C7D64460068BC2B /* LDHeadCell.h */,
 				150FBF541C7D64460068BC2B /* LDHeadCell.m */,
+				150FBF701C7DBF700068BC2B /* LDNewsCell.h */,
+				150FBF711C7DBF700068BC2B /* LDNewsCell.m */,
+				15C228331C829DD300D63F89 /* LDChannelCell.h */,
+				15C228341C829DD300D63F89 /* LDChannelCell.m */,
+				150FBF831C7F4DDC0068BC2B /* LDHomeLabel.h */,
+				150FBF841C7F4DDC0068BC2B /* LDHomeLabel.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -154,6 +201,10 @@
 			children = (
 				150FBF611C7D715A0068BC2B /* LDHeadViewModel.h */,
 				150FBF621C7D715A0068BC2B /* LDHeadViewModel.m */,
+				150FBF6A1C7DABF40068BC2B /* LDNewsViewModel.h */,
+				150FBF6B1C7DABF40068BC2B /* LDNewsViewModel.m */,
+				150FBF801C7F4A630068BC2B /* LDHomeChannelViewModel.h */,
+				150FBF811C7F4A630068BC2B /* LDHomeChannelViewModel.m */,
 			);
 			name = ViewModels;
 			sourceTree = "<group>";
@@ -238,6 +289,8 @@
 				150FBF451C7D5A510068BC2B /* LaunchScreen.storyboard in Resources */,
 				150FBF421C7D5A510068BC2B /* Assets.xcassets in Resources */,
 				150FBF401C7D5A510068BC2B /* Main.storyboard in Resources */,
+				150FBF7F1C7F498D0068BC2B /* topic_news.json in Resources */,
+				150FBF7A1C7F47740068BC2B /* Home.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,14 +350,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				150FBF5F1C7D70650068BC2B /* LDHeadModel.m in Sources */,
+				15C228351C829DD300D63F89 /* LDChannelCell.m in Sources */,
+				150FBF821C7F4A630068BC2B /* LDHomeChannelViewModel.m in Sources */,
+				150FBF721C7DBF700068BC2B /* LDNewsCell.m in Sources */,
 				150FBF5C1C7D6BA90068BC2B /* LDNetworkTool.m in Sources */,
+				150FBF6C1C7DABF40068BC2B /* LDNewsViewModel.m in Sources */,
+				150FBF691C7DAA7B0068BC2B /* LDNewsModel.m in Sources */,
 				150FBF631C7D715A0068BC2B /* LDHeadViewModel.m in Sources */,
 				150FBF581C7D67EF0068BC2B /* UIColor+Random.m in Sources */,
 				150FBF3A1C7D5A510068BC2B /* AppDelegate.m in Sources */,
 				150FBF661C7D770E0068BC2B /* NSObject+Log.m in Sources */,
 				150FBF551C7D64460068BC2B /* LDHeadCell.m in Sources */,
+				150FBF851C7F4DDC0068BC2B /* LDHomeLabel.m in Sources */,
+				150FBF6F1C7DAC1B0068BC2B /* LDNewsViewController.m in Sources */,
+				150FBF7D1C7F497A0068BC2B /* LDHomeChannelModel.m in Sources */,
 				150FBF4E1C7D63430068BC2B /* LDHeadViewController.m in Sources */,
 				150FBF371C7D5A510068BC2B /* main.m in Sources */,
+				150FBF781C7F475B0068BC2B /* LDHomeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

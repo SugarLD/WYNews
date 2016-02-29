@@ -19,6 +19,10 @@ static LDNetworkTool *instance = nil;
         NSURLSessionConfiguration *config = [NSURLSessionConfiguration defaultSessionConfiguration];
         config.timeoutIntervalForRequest = 15;
         instance = [[self alloc] initWithBaseURL:url sessionConfiguration:config];
+        
+        NSMutableSet *setM = [NSMutableSet setWithSet:instance.responseSerializer.acceptableContentTypes];
+        [setM addObject:@"text/html"];
+        instance.responseSerializer.acceptableContentTypes = setM;
     });
     return instance;
 }
@@ -36,6 +40,8 @@ static LDNetworkTool *instance = nil;
 }
 
 - (void)headViewWithSuccess:(void(^)(NSArray *results))success failure:(void(^)(NSError *error))failure {
+    
+    NSAssert(success != nil, @"success回调block不能为空--headView");
     [self GET:@"ad/headline/0-4.html" parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         //LDLog(@"%@", responseObject);
@@ -46,6 +52,22 @@ static LDNetworkTool *instance = nil;
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         LDLog(@"LDNetworkTool-error: %@", error);
+        failure(error);
+    }];
+}
+
+- (void)newsWithURLString:(NSString *)URLString Success:(void (^)(NSArray *))success failure:(void (^)(NSError *))failure {
+    
+    NSAssert(success != nil, @"success回调block不能为空--news");
+    [self GET:URLString parameters:nil progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+        
+        //LDLog(@"%@", responseObject);
+        NSString *rootKey = [responseObject keyEnumerator].nextObject;
+        success(responseObject[rootKey]);
+        
+        
+    } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
+        LDLog(@"news--error: %@", error);
         failure(error);
     }];
 }

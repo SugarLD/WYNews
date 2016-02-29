@@ -12,9 +12,7 @@
 @interface LDHeadCell ()
 
 @property (weak, nonatomic) IBOutlet UIImageView *imgView;
-@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 
-@property (weak, nonatomic) IBOutlet UIPageControl *pageControl;
 
 @end
 
@@ -24,10 +22,7 @@
     _headModel = headModel;
     
     [self.imgView sd_setImageWithURL:[NSURL URLWithString:headModel.imgsrc] placeholderImage:nil options:SDWebImageRetryFailed|SDWebImageLowPriority];
-    self.titleLabel.text = headModel.title;
     
-    self.pageControl.currentPage = self.tag;
-    LDLog(@"tag: %zd, currentPage: %zd", self.tag, self.pageControl.currentPage);
 }
 
 @end
