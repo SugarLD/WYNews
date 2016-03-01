@@ -31,6 +31,7 @@
 		150FBF821C7F4A630068BC2B /* LDHomeChannelViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF811C7F4A630068BC2B /* LDHomeChannelViewModel.m */; };
 		150FBF851C7F4DDC0068BC2B /* LDHomeLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 150FBF841C7F4DDC0068BC2B /* LDHomeLabel.m */; };
 		15C228351C829DD300D63F89 /* LDChannelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C228341C829DD300D63F89 /* LDChannelCell.m */; };
+		15C2284B1C85B14A00D63F89 /* LDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15C2284A1C85B14A00D63F89 /* LDDetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +78,8 @@
 		150FBF841C7F4DDC0068BC2B /* LDHomeLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDHomeLabel.m; sourceTree = "<group>"; };
 		15C228331C829DD300D63F89 /* LDChannelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDChannelCell.h; sourceTree = "<group>"; };
 		15C228341C829DD300D63F89 /* LDChannelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDChannelCell.m; sourceTree = "<group>"; };
+		15C228491C85B14A00D63F89 /* LDDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDDetailViewController.h; sourceTree = "<group>"; };
+		15C2284A1C85B14A00D63F89 /* LDDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LDDetailViewController.m; sourceTree = "<group>"; };
 		19DFA10921D2AFDEB3CDA1D2 /* libPods-WYNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WYNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F4380F9DE59727F4B35FE6F /* Pods-WYNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews/Pods-WYNews.release.xcconfig"; sourceTree = "<group>"; };
 		DC8FD4E83E9A34909FA7866D /* Pods-WYNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WYNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-WYNews/Pods-WYNews.debug.xcconfig"; sourceTree = "<group>"; };
@@ -176,6 +179,8 @@
 				150FBF6E1C7DAC1B0068BC2B /* LDNewsViewController.m */,
 				150FBF761C7F475B0068BC2B /* LDHomeViewController.h */,
 				150FBF771C7F475B0068BC2B /* LDHomeViewController.m */,
+				15C228491C85B14A00D63F89 /* LDDetailViewController.h */,
+				15C2284A1C85B14A00D63F89 /* LDDetailViewController.m */,
 				150FBF791C7F47740068BC2B /* Home.storyboard */,
 			);
 			name = Controllers;
@@ -358,6 +363,7 @@
 				150FBF691C7DAA7B0068BC2B /* LDNewsModel.m in Sources */,
 				150FBF631C7D715A0068BC2B /* LDHeadViewModel.m in Sources */,
 				150FBF581C7D67EF0068BC2B /* UIColor+Random.m in Sources */,
+				15C2284B1C85B14A00D63F89 /* LDDetailViewController.m in Sources */,
 				150FBF3A1C7D5A510068BC2B /* AppDelegate.m in Sources */,
 				150FBF661C7D770E0068BC2B /* NSObject+Log.m in Sources */,
 				150FBF551C7D64460068BC2B /* LDHeadCell.m in Sources */,

@@ -8,9 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@class LDHomeChannelModel;
+@class LDNewsViewController,LDHomeChannelModel;
 @interface LDChannelCell : UICollectionViewCell
 
-@property (strong, nonatomic) LDHomeChannelModel *channelModel;
+@property (strong, nonatomic) LDNewsViewController *newsVC;
 
 @end

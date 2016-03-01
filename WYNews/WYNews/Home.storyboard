@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--WYNews-->
         <scene sceneID="ZM2-yv-ZZ0">
             <objects>
                 <viewController id="Ptg-1N-C0p" customClass="LDHomeViewController" sceneMemberID="viewController">
@@ -67,7 +67,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="fcp-TR-p4u"/>
+                    <navigationItem key="navigationItem" title="WYNews" id="fcp-TR-p4u"/>
                     <connections>
                         <outlet property="collectionView" destination="9og-De-5at" id="Ys8-Uk-5qF"/>
                         <outlet property="headScrollView" destination="2tW-LU-urP" id="4Qg-Tr-05M"/>

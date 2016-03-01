@@ -7,6 +7,7 @@
 //
 
 #import "LDNewsViewController.h"
+#import "LDDetailViewController.h"
 
 #import "LDNewsCell.h"
 
@@ -38,6 +39,7 @@
     _channelModel = channelModel;
     //加载数据
     [self loadNewsData];
+    LDLog(@"加载数据：%@",self.channelModel.URLString);
 }
 
 - (void)loadNewsData {
@@ -76,6 +78,11 @@
     cell.newsModel = newsModel;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    LDDetailViewController *detailVC = [[LDDetailViewController alloc] init];
+    [self.navigationController pushViewController:detailVC animated:YES];
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {

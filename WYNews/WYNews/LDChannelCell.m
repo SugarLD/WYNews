@@ -11,21 +11,21 @@
 
 @interface LDChannelCell ()
 
-@property (strong, nonatomic) LDNewsViewController *newsVC;
+
 
 @end
 
 @implementation LDChannelCell
 
 - (void)awakeFromNib {
-    //加载sb
-    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
-    //实例化控制器
-    LDNewsViewController *newsVC = [sb instantiateInitialViewController];
+//    //加载sb
+//    UIStoryboard *sb = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+//    //实例化控制器
+//    LDNewsViewController *newsVC = [sb instantiateInitialViewController];
     
     //添加
-    [self.contentView addSubview:newsVC.view];
-    self.newsVC = newsVC;
+//    [self.contentView addSubview:newsVC.view];
+//    self.newsVC = newsVC;
 }
 
 - (void)layoutSubviews {
@@ -35,10 +35,10 @@
     self.newsVC.view.frame = self.bounds;
 }
 
-- (void)setChannelModel:(LDHomeChannelModel *)channelModel {
-    _channelModel = channelModel;
+- (void)setNewsVC:(LDNewsViewController *)newsVC {
+    _newsVC = newsVC;
     
-    self.newsVC.channelModel = channelModel;
+    [self.contentView addSubview:newsVC.view];
 }
 
 
